@@ -1,0 +1,15 @@
+{
+  "type": "record",
+  "name": "Trade",
+  "namespace": "com.example.trades",
+  "fields": [
+    {"name": "trade_id", "type": "string"},
+    {"name": "timestamp", "type": "string"},
+    {"name": "instrument", "type": "string"},
+    {"name": "side", "type": "string"},
+    {"name": "quantity", "type": "int"},
+    {"name": "price", "type": "double"},
+    {"name": "trader_id", "type": ["null","string"], "default": null},
+    {"name": "venue", "type": ["null","string"], "default": null}
+  ]
+}

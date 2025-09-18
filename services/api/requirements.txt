@@ -1,0 +1,5 @@
+﻿fastapi==0.95.2
+uvicorn[standard]==0.22.0
+pydantic==1.10.12
+kafka-python==2.0.2
+fastavro==1.8.0

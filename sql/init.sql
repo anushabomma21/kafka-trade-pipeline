@@ -1,0 +1,14 @@
+﻿CREATE TABLE IF NOT EXISTS trades (
+  id SERIAL PRIMARY KEY,
+  trade_id VARCHAR(100) UNIQUE NOT NULL,
+  instrument VARCHAR(50) NOT NULL,
+  side VARCHAR(10) NOT NULL,
+  quantity INTEGER NOT NULL,
+  price NUMERIC(18,6) NOT NULL,
+  notional NUMERIC(24,6) NOT NULL,
+  trader_id VARCHAR(100),
+  venue VARCHAR(100),
+  timestamp TIMESTAMP WITH TIME ZONE,
+  processed_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+  regulatory_flag BOOLEAN DEFAULT FALSE
+);
